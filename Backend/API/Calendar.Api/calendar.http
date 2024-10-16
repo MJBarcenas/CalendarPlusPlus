@@ -1,0 +1,14 @@
+GET http://localhost:5236/users
+
+###
+GET http://localhost:5236/users/1GET http://localhost:5236/users
+
+###
+POST http://localhost:5236/users
+Content-Type:  application/json
+
+{
+    "username": "gio_",
+    "password": "1234567",
+    "userType": "User"
+}
