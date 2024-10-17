@@ -1,14 +1,28 @@
-GET http://localhost:5236/users
+GET http://localhost:5236/users/
 
 ###
-GET http://localhost:5236/users/3
+GET http://localhost:5236/users/1
 
 ###
 POST http://localhost:5236/users
 Content-Type:  application/json
 
 {
-    "username": "gio_",
+    "username": "van_",
     "password": "1234567",
     "userType": "User"
 }
+
+###
+PUT http://localhost:5236/users/2
+Content-Type: application/json
+
+{
+    "username": "van_",
+    "password": "1234567",
+    "userType": "Admin",
+    "isEnabled": true
+}
+
+###
+DELETE http://localhost:5236/users/1
